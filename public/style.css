@@ -1,0 +1,127 @@
+body {
+    background-color: black;
+}
+
+body > h1 {
+    text-align: center;
+}
+
+body > a {
+    text-align: center;
+    display: block;
+    color: lightblue;
+}
+
+body > footer {
+    margin-top: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+*, button, input, textarea {
+    font-family: monospace;
+    color: white;
+    background-color: black;
+}
+
+ul#seeds {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul#seeds > li {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 5px 0;
+    border: 1px solid white;
+    border-radius: 5px 5px;
+    padding: 3px;
+}
+
+@media (max-width: 700px) {
+    ul#seeds > li {
+        width: 95%;
+    }
+}
+
+ul#seeds > li > h4 {
+    margin: 0;
+    text-align: center;
+}
+
+ul#seeds > li > p {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+ul#seeds > li > div {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+ul#seeds > li > div > span {
+    font-size: 0.7rem;
+}
+
+ul#seeds > li > div > span::before {
+    content: "Added by ";
+}
+
+img {
+    border-radius: 50%;
+    width: 30px;
+    margin-right: 5px;
+}
+
+div#input {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+div#input > div#as {
+    display: flex;
+    align-items: center;
+}
+
+div#input > * {
+    margin: 5px 0;
+}
+
+div#input > input {
+    border: none;
+    outline: none;
+}
+
+div#input > textarea {
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+div#input > button {
+    border: 1px solid white;
+    cursor: pointer;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px 5px;
+    font-family: monospace;
+}
+
+div#input > div#as > span {
+    font-size: 0.7rem;
+}
+
+div#input > div#as > span::before {
+    content: "Adding as ";
+}
